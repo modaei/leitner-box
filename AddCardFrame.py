@@ -11,7 +11,7 @@ class AddCardFrame(tk.Frame):
         main_frame = tk.Frame(root, bg=BG)
         main_frame.pack(fill=tk.BOTH, expand=1)
 
-        self.question_label = tk.Label(main_frame, bg=BG, text='Question :', font=16)
+        self.question_label = tk.Label(main_frame, bg=BG, text='Question :', font=18)
         self.question_label.place(relwidth=0.2, relheight=0.2, relx=0.05, rely=0.1)
 
         self.question_entry = tk.Entry(main_frame, bd=2, relief='groove', font=18)
