@@ -6,7 +6,7 @@ import threading
 class AddCardFrame(tk.Frame):
     def __init__(self, root, add_card=None, update_card=None, card=None, *args, **kwargs):
         tk.Frame.__init__(self, *args, **kwargs)
-        BG = '#ccebff'
+        BG = '#ccedff'
         self.root = root
         main_frame = tk.Frame(root, bg=BG)
         main_frame.pack(fill=tk.BOTH, expand=1)
