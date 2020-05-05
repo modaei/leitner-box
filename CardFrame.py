@@ -22,7 +22,7 @@ class CardFrame(tk.Frame):
         self.answer_entry.place(relwidth=1, relheight=0.45, relx=0, rely=0)
         self.answer_entry.focus()
 
-        button = tk.Button(input_frame, text='Submit', font=20, default='active', command=self.btn_submit_click)
+        button = tk.Button(input_frame, text='Submit1', font=20, default='active', command=self.btn_submit_click)
         button.place(relwidth=0.4, relheight=0.45, relx=0.3, rely=0.55)
 
         self.status_label = tk.Label(main_frame, bg=BG, anchor='w', font=("Segoe UI", 9))
