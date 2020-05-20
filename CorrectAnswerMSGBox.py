@@ -32,7 +32,7 @@ class CorrectAnswerMSGBox(tk.Frame):
         self.quit()
 
     def btn_edit_click(self, event=None):
-        self.show_edit_card()
+        self.show_edit_card(parent=self.root)
 
     def quit(self, event=None):
         self.root.destroy()

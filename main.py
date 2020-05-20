@@ -62,7 +62,7 @@ def show_add_card(event=None):
     menu_window_open = False
 
 
-def show_edit_card(event=None):
+def show_edit_card(event=None, parent=None):
     global menu_window_open
     global currentIndex
     if menu_window_open:
@@ -77,6 +77,10 @@ def show_edit_card(event=None):
     update_window.grab_set()
     AddCardFrame(root=update_window, update_card=dbMan.update_card, card=current_card)
     update_window.wait_window()
+    if parent:
+        parent.grab_set()
+        label = parent.winfo_children()[0].winfo_children()[1]
+        label.config(text=current_card['answer'])
     menu_window_open = False
     currentIndex -= 1
     next_card()
